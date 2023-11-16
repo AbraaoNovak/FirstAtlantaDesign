@@ -38,6 +38,19 @@ body {
 .navigation .logo {
     margin-left: 15px;
 }
+.navigation .phone{
+    display: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    color: #FFF;
+    background-color: #b8324f;
+    border-radius: 5px;
+    margin-right: 5rem;
+    transition: 0.5s all;
+}
+.navigation .phone:hover {
+    transform: scale(1.1);
+}
 
 .link {
     margin-right: 0.6rem;
@@ -106,6 +119,20 @@ body {
 
 .manual-btn:hover {
     background-color: #FFF;
+}
+.phone-call {
+    display: flex;
+    justify-content: center;
+}
+.phone-call .phone{
+    position: absolute;
+    top: 265px;
+    font-size: 10px;
+    border-radius: 5px;
+    padding: 5px;
+    color: #FFF;
+    background-color: #b8324f;
+    transform: 0.5s all;
 }
 
 #radio1:checked~.first {
@@ -568,6 +595,11 @@ body {
         margin-top: 270px;
         transition: 1s all;
     }
+    .phone-call .phone{
+        top: 330px;
+        font-size: 14px;
+        
+    }
 
     .second-section .title {
         margin: 1rem auto;
@@ -692,6 +724,24 @@ body {
     }
 
 }
+@media screen and (max-width: 590px){
+    .phone-call .phone{
+        display: block;
+    }
+    .navigation .phone{
+        display: none;
+    }
+}
+@media screen and (min-width: 591px) {
+    .phone-call .phone{
+        display: none;
+    }
+    .navigation .phone{
+        display: block;
+        margin-right: 1rem;
+        white-space: nowrap;
+    }
+}
 
 @media screen and (min-width:770px) {
     .logo {
@@ -699,7 +749,10 @@ body {
     }
 
     .navigation .logo {
-        margin-left: 50px;
+        margin-left: 10px;
+    }
+    .navigation .phone{
+        margin-right: 3rem;
     }
 
     .link {
@@ -801,7 +854,9 @@ body {
 }
 
 @media screen and (min-width:1024px) {
-
+ .navigation .logo{
+    margin-left: 50px;
+ }
     .ideia-one,
     .ideia-two,
     .ideia-three {
