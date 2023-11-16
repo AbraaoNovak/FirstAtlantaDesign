@@ -1,0 +1,78 @@
+@import url("/Style/style.css");
+
+.menu-footer .privacy {
+    border-bottom: 1px solid rgb(207, 56, 56);
+}
+.privacy-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.privacy-section .title {
+    margin: 1rem auto;
+    font-size: 20px;
+    color: #002768;
+    white-space: nowrap;
+    }
+
+.privacy-section .description {
+    margin-bottom: 1.5rem;
+    padding: 0 1.5rem;
+    text-align: start;
+    font-size: 1.1rem;
+    font-weight: 200;
+    text-align: justify;
+}
+.privacy-section .company-name{
+    font-weight: 500;
+}
+.privacy-section .privacypolicy {
+    font-weight: 500;
+    font-size: 14px;
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFF;
+    /* cor do background que vai ocupar o body */
+    z-index: 999;
+    /* z-index para jogar para frente e sobrepor tudo */
+}
+
+#preloader .inner {
+    position: absolute;
+    top: 50%;
+    /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* end: Preloader */
+
+@media screen and (min-width:468px) {
+    .privacy-section .title {
+        font-size: 1.5rem;
+    }
+    .privacy-section .description {
+        font-size: 1rem;
+        width: 90%;
+    }
+    
+}
+
+@media screen and (min-width:770px) {
+    .privacy-section .privacypolicy {
+        font-size: 1rem;
+    }
+    .privacy-section {
+        margin: auto 10rem;
+        
+    }
+}

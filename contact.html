@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/Style/contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="shortcut icon" href="/Assets/favicon.svg" type="image/x-icon" />
+</head>
+
+<body>
+    <!-- início do preloader -->
+    <div id="preloader">
+        <div class="inner">
+            <!-- HTML DA ANIMAÇÃO MUITO LOUCA DO SEU PRELOADER! -->
+            <img src="Assets/preloader-miniballs.gif">
+        </div>
+    </div>
+    <!-- fim do preloader -->
+
+    <!-- Link de navegação -->
+    <header class="header">
+        <nav class="navigation">
+            <img src="/Images/logo.svg" class="logo" alt="Logo da empresa">
+            <a href="index.html" class="link">Home</a>
+            <a href="portfolio.html" class="link">Portfolio</a>
+            <a href="about.html" class="link">About</a>
+            <a href="contact.html" class="link contact">Contact</a>
+        </nav>
+    </header>
+    <!-- Fim Link de navegação -->
+    <main>
+        <div class="divider-contact">
+            <img src="/Images/contact-divider.svg" class="divider-image" alt="Paper Airplane Divider">
+        </div>
+
+        <div class="form-information">
+            <h1 class="title">Tell us, what is your project?</h1>
+            <p class="description">We invite our clients to get in touch, sharing their visions and desires. Our
+                dedicated team is ready to turn dreams into reality, ensuring a personalized and exceptional experience
+                in every renovation. Contact us today and embark on a journey toward a truly special
+                residence.<br><br>Insert your informations bellow. At message drescribe all details about your
+                remodeling wish. It's easier for your technician understand your dream!</p>
+        </div>
+
+        <!-- Formulário de preenchimento  -->
+        <section class="form-section">
+            <form action="https://api.staticforms.xyz/submit" method="post">
+                <label>Name</label>
+                <input type="text" name="name" placeholder="Write Your Name" id="name" autocomplete="off" required>
+                <label>Last Name</label>
+                <input type="text" name="lastname" placeholder="Write Your Last Name" id="lastname" autocomplete="off"
+                    required>
+                <label>Email</label>
+                <input type="email" name="email" placeholder="Your best email" id="email" required>
+                <label>Number</label>
+                <input type="phone" name="phone" placeholder="How can we call to you?" id="number" required>
+                <label>Write your message</label>
+                <textarea name="message" cols="30" rows="10" placeholder="How can we help you?" id="message"
+                    required></textarea>
+                <button type="submit">Send</button>
+
+
+                <input type="hidden" name="accessKey" value="fb48b7c2-1597-45e1-b2b5-c2a17e67cf5c">
+                <input type="hidden" name="redirectTo" value="http://127.0.0.1:5500/thankyou.html">
+            </form>
+        </section>
+        <!-- FIM formulário de preenchimento  -->
+
+    </main>
+
+    <div class="divider-footer">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M598.97 114.72L0 0 0 120 1200 120 1200 0 598.97 114.72z" class="shape-fill"></path>
+        </svg>
+    </div>
+    <!-- Rodapé  -->
+    <footer class="footer-section">
+        <div class="follow">
+            <h4 class="follow-us">Follow Us</h4>
+            <a href="https://www.instagram.com/firstatlantadesign/" target="_blank"><img src="/Assets/instagram.svg"
+                    class="instagram-icon" alt="Instagram Icon"></a>
+            <a href="https://www.facebook.com/profile.php?id=61553180494663" target="_blank"><img
+                    src="/Assets/facebook.svg" class="facebook-icon" alt="Facebook Icon"></a>
+            <a href="#"><img src="/Assets/youtube.svg" class="youtube-icon" alt="Youtube Icon"></a>
+        </div>
+        <div class="menu-footer">
+            <a href="index.html" class="link-footer">Home</a>
+            <a href="portfolio.html" class="link-footer">Portfolio</a>
+            <a href="about.html" class="link-footer">About</a>
+            <a href="contact.html" class="link-footer contact">Contact</a>
+            <a href="privacy.html" class="link-footer">Privacy Policy</a>
+        </div>
+        <div class="copyright">
+            <h5 class="description-copyright">First Atlanta Design &copy; 2023</h5>
+        </div>
+        <div class="novak-digital">
+            <a href="https://www.instagram.com/novak.solucoes.digitais/" target="_blank" class="novak">Novak Digital
+                Solutions</a>
+        </div>
+    </footer>
+    
+    <!-- FIM rodapé  -->
+
+    <script src="/Script/preloader.js"></script>
+</body>
+
+</html>

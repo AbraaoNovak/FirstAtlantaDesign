@@ -1,0 +1,62 @@
+@import url("/Style/style.css");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+.thanks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 2s all;
+}
+.logo-thanks{
+    width: 180px;
+}
+.thanks .title {
+    color: #002768;
+}
+.thanks .description {
+    font-weight: 200;
+}
+.btn-return {
+    margin: 2rem auto;
+    padding: 10px;
+    font-size: 1.3rem;
+    color: #FFF;
+    width: 90px;
+    text-align: center;
+    background: #002768;
+    border-radius: 3px;
+    transition: 1s all;
+}
+.btn-return:hover {
+    transform: scale(1.1);
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFF;
+    /* cor do background que vai ocupar o body */
+    z-index: 999;
+    /* z-index para jogar para frente e sobrepor tudo */
+}
+
+#preloader .inner {
+    position: absolute;
+    top: 50%;
+    /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* end: Preloader */

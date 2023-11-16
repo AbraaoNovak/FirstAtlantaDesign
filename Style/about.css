@@ -1,0 +1,126 @@
+@import url("/Style/style.css");
+
+.navigation .about {
+    border-bottom: 1px solid rgb(207, 56, 56);
+}
+
+.about-section,
+.work-location {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+
+.about-section .title {
+    margin: 1rem auto;
+    color: #002768;
+    border-bottom: 1px solid #b8324f;
+}
+
+.about-section .description {
+    margin-bottom: 1.5rem;
+    padding: 0 1.5rem;
+    text-align: start;
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+.work-location .title {
+    margin: 1rem auto;
+    color: #002768;
+    border-bottom: 1px solid #b8324f;
+}
+
+.work-location .description {
+    margin-bottom: 1.5rem;
+    padding: 0 1.5rem;
+    text-align: start;
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+
+.location-list-names {
+    list-style: none;
+    text-align: center;
+    margin: 0.5rem auto;
+}
+
+.location-names {
+    text-align: center;
+}
+
+.menu-footer .about {
+    border-bottom: 1px solid rgb(207, 56, 56);
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFF;
+    /* cor do background que vai ocupar o body */
+    z-index: 999;
+    /* z-index para jogar para frente e sobrepor tudo */
+}
+
+#preloader .inner {
+    position: absolute;
+    top: 50%;
+    /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* end: Preloader */
+
+@media screen and (min-width:468px) {
+    .about-section .title {
+        font-size: 1.5rem;
+    }
+
+    .about-section .description {
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    .work-location .title {
+        font-size: 1.5rem;
+    }
+
+    .work-location .description {
+        font-size: 1rem;
+        width: 90%;
+    }
+
+    .location-names .state {
+        font-size: 1.5rem;
+    }
+
+    .location-names .city {
+        font-size: 1rem;
+    }
+
+    .location-list-names {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width:770px) {
+    .location-list-names {
+        display: flex;
+        list-style: disc;
+        gap: 30px;
+        width: 90%;
+        flex-flow: wrap;
+    }
+
+    .location-list {
+        margin-bottom: 2rem;
+    }
+
+
+}

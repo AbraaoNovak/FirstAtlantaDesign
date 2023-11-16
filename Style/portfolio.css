@@ -1,0 +1,132 @@
+@import url("/Style/style.css");
+
+.navigation .portfolio{
+    border-bottom: 1px solid rgb(207, 56, 56);
+}
+.portfolio-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+}
+.portfolio-section .title {
+    margin: 1rem auto;
+    color: #002768;
+    border-bottom: 1px solid #b8324f;
+}
+.portfolio-section .description {
+    margin-bottom: 1.5rem;
+    padding: 0 1.5rem;
+    text-align: start;
+    font-size: 1.1rem;
+    font-weight: 200;
+}
+.portfolio-section .contact-link {
+    text-decoration: none;
+    font-size: 18px;
+    color: #b8324f;
+    border-bottom: 1px solid #b8324f;
+}
+div.galeria-modal {
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(3px);
+    position: fixed;
+    top: 0 ;
+    left: 0;
+    padding: 4%;
+    visibility: hidden;
+    z-index: 5;
+}
+div.galeria-modal span {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 30px;
+    color: red;
+    cursor: pointer;
+    z-index: 10;
+}
+div.galeria-modal img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    transform: scale(0);
+    transition: transform 0.5s ease-in-out;
+}
+.images-section {
+    width: 100%;
+    padding: 2%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 30vh;
+}
+section.images-section div.image {
+    /* background-color: red; */
+    margin: 0.7vw;
+    overflow: hidden;
+}
+.h-2 {
+    grid-row: span 2;
+}
+.w-2 {
+    grid-row: span 2;
+}
+section.images-section div.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    transition: 0.7s all;
+}
+section.images-section div.image img:hover{
+    transform: scale(1.1);
+
+}
+@media screen and (max-width: 764px) {
+    .images-section {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 25vh;
+    }
+}
+
+.menu-footer .portfolio {
+    border-bottom: 1px solid rgb(207, 56, 56);
+}
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FFF;
+    /* cor do background que vai ocupar o body */
+    z-index: 999;
+    /* z-index para jogar para frente e sobrepor tudo */
+}
+
+#preloader .inner {
+    position: absolute;
+    top: 50%;
+    /* centralizar a parte interna do preload (onde fica a animação)*/
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* end: Preloader */
+
+@media screen and (min-width:468px) {
+    .portfolio-section .title {
+        font-size: 1.5rem;
+    }
+    .portfolio-section .description {
+        font-size: 1rem;
+        width: 90%;
+    }
+    .portfolio-section .contact-link {
+        font-size: 1rem;
+    }
+
+}
